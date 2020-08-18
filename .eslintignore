@@ -9,4 +9,5 @@ dist
 *.log
 *.lock
 *.css
+*.scss
 serviceWorker.ts
