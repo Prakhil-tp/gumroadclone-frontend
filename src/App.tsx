@@ -10,7 +10,7 @@ import Buyer from "./pages/Buyer";
 import Seller from "./pages/Seller";
 
 function checkLoginStatus(): boolean {
-  return false;
+  return true;
 }
 
 function App(): JSX.Element {
