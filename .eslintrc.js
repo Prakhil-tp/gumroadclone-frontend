@@ -45,6 +45,7 @@ module.exports = {
       {
         devDependencies: true
       }
-    ]
+    ],
+    "react/prop-types": "off"
   }
 };
