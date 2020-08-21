@@ -1,10 +1,11 @@
 import React from "react";
+import SellerLayout from "../../components/layout/SellerLayout";
 
-const Seller = (): JSX.Element => {
+const Seller: React.FC = () => {
   return (
-    <div>
-      <h1>This is seller screen</h1>
-    </div>
+    <SellerLayout>
+      <h1>Body here</h1>
+    </SellerLayout>
   );
 };
 
