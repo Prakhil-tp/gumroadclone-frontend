@@ -1,0 +1,19 @@
+@import "~styles/mixin";
+@import "~styles/constants";
+
+.NavOptions {
+  cursor: pointer;
+  @include flex(row, space-around, stretch);
+  i {
+    font-size: 17px;
+    padding-right: 13px;
+  }
+
+  &:hover {
+    // color: $black;
+  }
+
+  &--active {
+    color: $primary;
+  }
+}
