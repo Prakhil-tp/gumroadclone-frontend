@@ -1,10 +1,15 @@
 import React from "react";
-import SellerLayout from "../../components/layout/SellerLayout";
+import SellerLayout from "components/layout/SellerLayout";
+import SecondaryNavBar from "./components/SecondaryNavBar";
+import TabBody from "./components/TabBody";
 
 const Seller: React.FC = () => {
   return (
     <SellerLayout>
-      <h1>Body here</h1>
+      <>
+        <SecondaryNavBar />
+        <TabBody />
+      </>
     </SellerLayout>
   );
 };
