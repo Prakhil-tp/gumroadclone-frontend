@@ -13,6 +13,9 @@ export default {
       600: "#35a6ab",
       700: "#36aaaf",
       800: "#36a9ae"
+    },
+    nav: {
+      100: "#797874"
     }
   },
   config: {
