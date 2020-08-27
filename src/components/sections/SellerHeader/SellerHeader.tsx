@@ -31,8 +31,8 @@ const SellerHeader = (): JSX.Element => {
       </Grid>
       <Grid
         w="100%"
-        p="21px 30px"
-        bg="#efefe9"
+        p="21px 30px 16px 30px"
+        bg="background.grey"
         templateColumns={{
           sm: "1fr 4fr 1fr",
           md: "1fr 4fr 1fr",
