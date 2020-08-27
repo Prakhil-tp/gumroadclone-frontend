@@ -1,22 +1,24 @@
 @font-face {
   font-family: "SFNS Display";
-  src: url("./assets/fonts/sfnsFonts.ttf");
+  src: url("./assets/fonts/sfnsFonts.ttf") format("ttf");
 }
 @font-face {
   font-family: "Helvetica";
-  src: url("./assets/fonts/Helvetica.ttf");
+  src: url("./assets/fonts/Helvetica.ttf") format("ttf");
 }
 @font-face {
   font-family: "Helvetica";
-  src: url("./assets/fonts/Helvetica-Bold.ttf");
+  src: url("./assets/fonts/Helvetica-Bold.ttf") format("ttf");
   font-weight: 700;
 }
 @font-face {
   font-family: "Helvetica";
-  src: url("./assets/fonts/helvetica-light-587ebe5a59211.ttf");
+  src: url("./assets/fonts/helvetica-light-587ebe5a59211.ttf") format("ttf");
   font-weight: 100;
 }
-.body {
+
+body {
   font-family: -apple-system, Helvetica, helvetica neue, "SFNS Display", Arial,
     sans-serif;
+  background-color: #efefe9;
 }
