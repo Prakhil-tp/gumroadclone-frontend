@@ -4,9 +4,9 @@ import ClassNames from "classnames";
 import styles from "./Options.module.scss";
 
 const Options: React.FC = () => {
-  const [currentTab, setCurrentTab] = useState<string>("");
+  const [currentTab, setCurrentTab] = useState<string>("Products");
 
-  const boxStyle = useCallback((option: string, tab = "") => {
+  const boxStyle = useCallback((option: string, tab = "Products") => {
     return ClassNames(styles.NavOptions, {
       [styles["NavOptions--active"]]: tab === option
     });
@@ -21,9 +21,9 @@ const Options: React.FC = () => {
       p="5px 0px 0px 0px"
       direction="row"
       justifyContent="space-evenly"
-      fontSize="sm"
+      fontSize="13px"
       fontWeight="700"
-      color="nav.100"
+      color="text.100"
       w="100%"
     >
       <Box
