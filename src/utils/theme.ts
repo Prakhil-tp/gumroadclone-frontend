@@ -2,6 +2,13 @@ import theme from "@chakra-ui/theme";
 
 export default {
   ...theme,
+  styles: {
+    global: {
+      "html,body": {
+        color: "#efefe9"
+      }
+    }
+  },
   colors: {
     ...theme.colors,
     primary: {
@@ -15,7 +22,7 @@ export default {
       800: "#206568",
       900: "#1b5557"
     },
-    nav: {
+    text: {
       100: "#797874"
     }
   },
