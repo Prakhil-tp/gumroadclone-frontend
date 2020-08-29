@@ -1,15 +1,14 @@
 import React from "react";
 import SellerLayout from "components/layout/SellerLayout";
-import SecondaryNavBar from "./components/SecondaryNavBar";
-import ProductList from "./components/ProductList";
+import { ProductsProvider } from "contexts/SellerProductContext";
+import ProductsContainer from "./components/ProductsContainer";
 
-const Seller: React.FC = () => {
+const Seller = () => {
   return (
     <SellerLayout>
-      <>
-        <SecondaryNavBar />
-        <ProductList />
-      </>
+      <ProductsProvider>
+        <ProductsContainer />
+      </ProductsProvider>
     </SellerLayout>
   );
 };
