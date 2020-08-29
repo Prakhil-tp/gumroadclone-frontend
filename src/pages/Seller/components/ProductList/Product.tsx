@@ -1,12 +1,6 @@
 import React from "react";
 import { Flex, Grid, Box, Text } from "@chakra-ui/core";
-
-type Props = {
-  title: string;
-  sales: string;
-  total: number;
-  price: number;
-};
+import { Product as Props } from "types";
 
 const Product: React.FC<Props> = ({ title, sales, total, price }) => {
   return (
