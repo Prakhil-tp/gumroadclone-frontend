@@ -5,7 +5,7 @@ export default {
   styles: {
     global: {
       "html,body": {
-        color: "#efefe9"
+        backgroundColor: "#efefe9"
       }
     }
   },
@@ -23,7 +23,8 @@ export default {
       900: "#1b5557"
     },
     text: {
-      100: "#797874"
+      gray: "#797874",
+      black: "#252a2e"
     }
   },
   config: {
