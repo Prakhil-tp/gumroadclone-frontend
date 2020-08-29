@@ -1,6 +1,6 @@
 import React from "react";
 
-const Buyer = (): JSX.Element => {
+const Buyer = () => {
   return (
     <div>
       <h1>This buyer screen</h1>{" "}
