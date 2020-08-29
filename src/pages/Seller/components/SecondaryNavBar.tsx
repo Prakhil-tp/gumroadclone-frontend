@@ -1,7 +1,15 @@
 import React from "react";
 import { Box, Flex, Button, Text } from "@chakra-ui/core";
+import { useProducts } from "contexts/SellerProductContext";
 
-const SecondaryNavBar: React.FC = () => {
+const SecondaryNavBar = () => {
+  const { setCurrentProductId, setCurrentView } = useProducts();
+
+  const handleClick = () => {
+    setCurrentProductId(null);
+    setCurrentView("form");
+  };
+
   return (
     <Flex
       justifyContent="space-between"
@@ -13,7 +21,7 @@ const SecondaryNavBar: React.FC = () => {
       borderBottom="1px solid #e3e3e3"
     >
       <Box>
-        <Text fontSize="lg" fontWeight="100" color="text.100">
+        <Text fontSize="lg" fontWeight="100" color="text.gray">
           Products
         </Text>
       </Box>
@@ -23,6 +31,7 @@ const SecondaryNavBar: React.FC = () => {
           variant="solid"
           colorScheme="primary"
           fontWeight="100"
+          onClick={handleClick}
         >
           New product
         </Button>
