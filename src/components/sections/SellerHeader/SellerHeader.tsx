@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Grid, Flex } from "@chakra-ui/core";
-import Options from "./components/Options";
+import Options from "./Options";
 import styles from "./SellerHeader.module.scss";
 
 const SellerHeader = (): JSX.Element => {
@@ -47,7 +47,10 @@ const SellerHeader = (): JSX.Element => {
         </Box>
         <Options />
         <Flex direction="row" justifyContent="flex-end">
-          <i className="fa fa-user-circle" style={{ fontSize: "30px" }} />
+          <i
+            className="fa fa-user-circle"
+            style={{ fontSize: "30px", color: "#797874" }}
+          />
         </Flex>
       </Grid>
     </>
