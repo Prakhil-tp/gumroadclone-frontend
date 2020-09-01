@@ -17,7 +17,7 @@ const SecondaryNavBar = () => {
       bg="white"
       w="100%"
       h="65px"
-      p="0 8%"
+      p="0 7%"
       borderBottom="1px solid #e3e3e3"
     >
       <Box>
