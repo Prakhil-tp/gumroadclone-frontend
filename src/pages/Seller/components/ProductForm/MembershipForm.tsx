@@ -11,10 +11,12 @@ import {
 } from "@chakra-ui/core";
 import { Label, HStackButton } from "components/ui";
 import { useProductForm } from "contexts/ProductFormContext";
+import { useProducts } from "contexts/SellerProductContext";
 import { Product } from "types";
 
 const MembershipForm = () => {
   const { setCurrentForm, updateCurrentProduct } = useProductForm();
+  const { setCurrentView } = useProducts();
   const [type, setType] = useState<Product["type"]>("classic");
   const [state, setState] = useState({
     title: "",
@@ -48,6 +50,10 @@ const MembershipForm = () => {
       type
     });
     setCurrentForm("DetailsForm");
+  };
+
+  const handleCancelClick = () => {
+    setCurrentView("list");
   };
 
   return (
@@ -134,6 +140,7 @@ const MembershipForm = () => {
             fontWeight="100"
             border="1px solid #ddd"
             w="100%"
+            onClick={handleCancelClick}
           >
             Cancel
           </Button>

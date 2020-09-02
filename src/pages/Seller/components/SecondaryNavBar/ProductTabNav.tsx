@@ -13,7 +13,9 @@ const ProductTabNav = () => {
     setCurrentView("form");
   };
 
-  const handlePublishClick = () => {};
+  const handlePublishClick = () => {
+    setCurrentView("list");
+  };
 
   return (
     <>
