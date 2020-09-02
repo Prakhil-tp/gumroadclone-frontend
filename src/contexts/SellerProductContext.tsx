@@ -19,7 +19,7 @@ interface ContextValue extends State {
 }
 
 const initialValue: ContextValue = {
-  currentView: "form",
+  currentView: "list",
   currentProductId: null,
   products: [
     {

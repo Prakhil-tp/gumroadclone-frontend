@@ -10,7 +10,7 @@ const ProductsContainer = () => {
   if (currentView === "list") {
     return (
       <>
-        <SecondaryNavBar />
+        <SecondaryNavBar tab="Products" />
         <ProductList />
       </>
     );

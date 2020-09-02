@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Product } from "types";
 import { Box, VStack, Heading, Input, Textarea } from "@chakra-ui/core";
 import { Label } from "components/ui";
-import SecondaryNavBar from "../SecondaryNavBar";
+import SecondaryNavBar from "../SecondaryNavBar/SecondaryNavBar";
 
 type Props = {
   currentProduct: Partial<Product>;
@@ -13,7 +13,7 @@ const DetailsForm = ({ currentProduct }: Props) => {
 
   return (
     <Box w="100%" bg="white">
-      <SecondaryNavBar />
+      <SecondaryNavBar tab="Products" />
       <VStack align="flex-start" p="30px 7%" maxWidth="60%">
         <Heading
           as="h4"
