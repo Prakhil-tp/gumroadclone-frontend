@@ -1,10 +1,11 @@
 import React from "react";
+import BuyerLayout from "components/layout/BuyerLayout";
 
 const Buyer = () => {
   return (
-    <div>
-      <h1>This buyer screen</h1>{" "}
-    </div>
+    <BuyerLayout>
+      <div>body goes here</div>
+    </BuyerLayout>
   );
 };
 
