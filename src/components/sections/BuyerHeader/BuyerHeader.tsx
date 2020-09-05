@@ -20,7 +20,7 @@ const BuyerHeader = ({ currentView, setCurrentView }: Props) => {
       left="0"
       alignItems="center"
       templateRows="1"
-      templateColumns="1fr 7fr 4fr 1fr"
+      templateColumns="1fr 9fr 3fr 1fr"
     >
       <Box>
         <img src="/assets/logo.svg" alt="logo" style={{ maxWidth: "24px" }} />
@@ -28,12 +28,12 @@ const BuyerHeader = ({ currentView, setCurrentView }: Props) => {
 
       <Box>
         <Input
-          placeholder="Search for products"
+          placeholder="Search products"
           border="1px solid #ddd"
           focusBorderColor="primary.300"
         />
       </Box>
-      <Flex justifyContent="space-around" p="0 15%" w="100%" fontSize="15px">
+      <Flex justifyContent="space-around" p="0 10%" w="100%" fontSize="15px">
         <HStack
           cursor="pointer"
           color={currentView === "Discover" ? "primary.300" : "icon.gray"}
