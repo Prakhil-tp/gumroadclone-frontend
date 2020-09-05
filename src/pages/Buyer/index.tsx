@@ -1,10 +1,15 @@
 import React from "react";
 import BuyerLayout from "components/layout/BuyerLayout";
+import Discover from "./Discover";
+import SearchView from "./SearchView";
+import Library from "./Library";
 
 const Buyer = () => {
   return (
     <BuyerLayout>
-      <div>body goes here</div>
+      <Discover />
+      <SearchView />
+      <Library />
     </BuyerLayout>
   );
 };
