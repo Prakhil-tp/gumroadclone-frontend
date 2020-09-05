@@ -25,6 +25,9 @@ export default {
     text: {
       gray: "#797874",
       black: "#252a2e"
+    },
+    icon: {
+      gray: "#ddd"
     }
   },
   config: {
