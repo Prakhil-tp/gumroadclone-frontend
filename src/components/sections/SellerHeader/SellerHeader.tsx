@@ -1,7 +1,6 @@
 import React from "react";
 import { Box, Grid, Flex } from "@chakra-ui/core";
 import Options from "./Options";
-import styles from "./SellerHeader.module.scss";
 
 const SellerHeader = (): JSX.Element => {
   const colors = [
@@ -43,7 +42,7 @@ const SellerHeader = (): JSX.Element => {
         borderBottom="1px solid #e3e3e3"
       >
         <Box>
-          <img src="/assets/logo.svg" alt="logo" className={styles.logo} />
+          <img src="/assets/logo.svg" alt="logo" style={{ maxWidth: "24px" }} />
         </Box>
         <Options />
         <Flex direction="row" justifyContent="flex-end">
