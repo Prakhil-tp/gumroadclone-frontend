@@ -7,3 +7,5 @@ export type Product = {
   price: string | number;
   type: "classic" | "membership";
 };
+
+export type BuyerScreens = "Discover" | "Search" | "Library";
