@@ -1,3 +1,7 @@
+type Owner = {
+  name: string;
+};
+
 export type Product = {
   id: string;
   title: string;
@@ -6,6 +10,10 @@ export type Product = {
   total: string | number;
   price: string | number;
   type: "classic" | "membership";
+  owner?: Owner;
+  cover?: string;
 };
+
+export type Card = Pick<Product, "title" | "cover" | "owner" | "price">;
 
 export type BuyerScreens = "Discover" | "Search" | "Library";
