@@ -13,7 +13,7 @@ function checkLoginStatus(): boolean {
   return true;
 }
 
-function App(): JSX.Element {
+function App() {
   const [isLogin, setLogin] = useState<boolean>();
 
   useEffect(() => {
