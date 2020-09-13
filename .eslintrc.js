@@ -49,6 +49,8 @@ module.exports = {
     "react/prop-types": "off",
     "no-plusplus": [2, { allowForLoopAfterthoughts: true }],
     "@typescript-eslint/explicit-module-boundary-types": "off",
-    "react/no-children-prop": "off"
+    "react/no-children-prop": "off",
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": "error"
   }
 };
