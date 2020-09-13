@@ -79,7 +79,12 @@ const MembershipForm = () => {
             onClick={() => handleTypeClick("classic")}
           >
             <i className="fas fa-receipt" style={{ fontSize: "20px" }} />
-            <Text color="text.black" fontSize="lg" fontWeight="700">
+            <Text
+              role="button"
+              color="text.black"
+              fontSize="lg"
+              fontWeight="700"
+            >
               Classic:
             </Text>
             <Text color="text.black">Start selling today</Text>
@@ -90,7 +95,12 @@ const MembershipForm = () => {
             onClick={() => handleTypeClick("membership")}
           >
             <i className="fas fa-sync-alt" style={{ fontSize: "20px" }} />
-            <Text color="text.black" fontSize="lg" fontWeight="700">
+            <Text
+              color="text.black"
+              role="button"
+              fontSize="lg"
+              fontWeight="700"
+            >
               Membership:
             </Text>
             <Text color="text.black">Charge on a recurring basis</Text>

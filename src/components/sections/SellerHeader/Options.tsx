@@ -28,6 +28,7 @@ const Options = () => {
     >
       <Box
         className={boxStyle("Products", currentTab)}
+        role="tab"
         onClick={handleOptionsClick}
       >
         <i className="fa fa-archive" />
@@ -35,6 +36,7 @@ const Options = () => {
       </Box>
       <Box
         className={boxStyle("Customers", currentTab)}
+        role="tab"
         onClick={handleOptionsClick}
       >
         <i className="fas fa-user-friends" />
@@ -42,6 +44,7 @@ const Options = () => {
       </Box>
       <Box
         className={boxStyle("Posts", currentTab)}
+        role="tab"
         onClick={handleOptionsClick}
       >
         <i className="fa fa-newspaper" />
@@ -49,6 +52,7 @@ const Options = () => {
       </Box>
       <Box
         className={boxStyle("Analytics", currentTab)}
+        role="tab"
         onClick={handleOptionsClick}
       >
         <i className="fas fa-chart-bar" />
@@ -56,6 +60,7 @@ const Options = () => {
       </Box>
       <Box
         className={boxStyle("Profile", currentTab)}
+        role="tab"
         onClick={handleOptionsClick}
       >
         <i className="fa fa-store" />
