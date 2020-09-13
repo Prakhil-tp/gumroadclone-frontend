@@ -1,5 +1,17 @@
 import React from "react";
-import { Grid, Box, HStack, Input, Flex, Text } from "@chakra-ui/core";
+import { useHistory } from "react-router-dom";
+import {
+  Grid,
+  Box,
+  HStack,
+  Input,
+  Flex,
+  Menu,
+  MenuList,
+  MenuButton,
+  MenuItem,
+  Text
+} from "@chakra-ui/core";
 import { BuyerScreens } from "types";
 
 type Props = {
@@ -8,6 +20,7 @@ type Props = {
 };
 
 const BuyerHeader = ({ currentView, setCurrentView }: Props) => {
+  const history = useHistory();
   return (
     <Grid
       w="100%"
@@ -15,7 +28,7 @@ const BuyerHeader = ({ currentView, setCurrentView }: Props) => {
       p="15px 30px"
       borderTop="2px solid #1b5557"
       borderBottom="1px solid #ddd"
-      position="absolute"
+      position="fixed"
       top="0"
       left="0"
       alignItems="center"
@@ -37,6 +50,7 @@ const BuyerHeader = ({ currentView, setCurrentView }: Props) => {
         <HStack
           cursor="pointer"
           color={currentView === "Discover" ? "primary.300" : "icon.gray"}
+          role="tab"
           onClick={() => setCurrentView("Discover")}
         >
           <i className="fas fa-star" style={{ color: "inherit" }} />
@@ -52,6 +66,7 @@ const BuyerHeader = ({ currentView, setCurrentView }: Props) => {
 
         <HStack
           cursor="pointer"
+          role="tab"
           color={currentView === "Library" ? "primary.300" : "icon.gray"}
           onClick={() => setCurrentView("Library")}
         >
@@ -66,8 +81,18 @@ const BuyerHeader = ({ currentView, setCurrentView }: Props) => {
           </Text>
         </HStack>
       </Flex>
-      <Box fontSize="30px" color="icon.gray" cursor="pointer">
-        <i className="fa fa-user-circle" style={{ color: "inherit" }} />
+      <Box>
+        <Menu>
+          <MenuButton fontSize="30px" color="icon.gray">
+            <i className="fa fa-user-circle" style={{ color: "inherit" }} />
+          </MenuButton>
+          <MenuList>
+            <MenuItem onClick={() => history.push("/dashboard")}>
+              Switch to selling
+            </MenuItem>
+            <MenuItem>logout</MenuItem>
+          </MenuList>
+        </Menu>
       </Box>
     </Grid>
   );
