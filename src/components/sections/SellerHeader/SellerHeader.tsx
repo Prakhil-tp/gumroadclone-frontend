@@ -34,8 +34,8 @@ const SellerHeader = () => {
       <Options />
       <Flex direction="row" justifyContent="flex-end">
         <Menu>
-          <MenuButton fontSize="30px" color="icon.gray">
-            <i className="fa fa-user-circle" style={{ color: "inherit" }} />
+          <MenuButton fontSize="30px">
+            <i className="fa fa-user-circle" style={{ color: "#797874" }} />
           </MenuButton>
           <MenuList>
             <MenuItem onClick={() => history.goBack()}>
