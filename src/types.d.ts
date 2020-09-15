@@ -12,6 +12,7 @@ export type Product = {
   type: "classic" | "membership";
   owner?: Owner;
   cover?: string;
+  content?: string;
 };
 
 export type Card = Pick<Product, "title" | "cover" | "owner" | "price">;
