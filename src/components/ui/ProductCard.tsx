@@ -11,6 +11,8 @@ const ProductCard = ({ title, cover, owner, price }: Card) => {
       h="460px"
       borderRadius="4px"
       flex="0 0 auto"
+      overflow="hidden"
+      boxShadow="1px 1px 4px 1px #ebebeb"
     >
       <Image
         src={cover}
@@ -44,7 +46,8 @@ const ProductCard = ({ title, cover, owner, price }: Card) => {
             p="5px 0 5px 10px"
             bg="#fdce71"
           >
-            <Text>${price}</Text>
+            <Text p="0 5px 0 0">$</Text>
+            <Text paddingRight="5px">{price}</Text>
             <Box
               w="0"
               h="0"
